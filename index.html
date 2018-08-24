@@ -23,10 +23,12 @@
 					<li><a href="#">О Компании</a></li>
 				</ul>
 				<div class="menu-search">
-					<span>Поиск</span>
+					<button class="button button-search">Поиск</button>
 					<div class="sub-menu menu-search-sub">
-						<!--Здесь будет форма
-							Что ищем?-->
+						<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+								<label class="visual-hidden" for="main-search">Введите информацию для поиска</label>
+								<input id="main-search" type="text" name="search" placeholder="Что ищем?">	
+						</form>
 					</div>
 				</div>
 				<div class="menu-login">
