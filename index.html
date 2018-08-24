@@ -208,7 +208,22 @@
 		</footer>
 		<section class="modal modal-feedback">
 			<b>Мы обязательно вам ответим!</b>
-			
+			<form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
+				<p>
+					<label class="visual-hidden" for="feedback-name">Введите имя</label>
+					<input id="feedback-name" type="text" name="name" placeholder="Как вас зовут?">
+				</p>
+				<p>
+					<label class="visual-hidden" for="feedback-email">Введите электронную почту</label>
+					<input id="feedback-email" type="email" name="email" placeholder="Ваша почта для ответа?">
+				</p>
+				<p>
+					<label class="visual-hidden" for="feedback-comment">Напишите ваш вопрос или предложение</label>
+					<textarea id="feedback-comment" name="comment" placeholder="Напишите что-нибудь..."></textarea>
+				</p>
+				<button class="button" type="submit">Отправить</button>
+				<button class="modal-close" type="button">Закрыть</button>
+			</form>
 			
 		</section>
 	</body>
