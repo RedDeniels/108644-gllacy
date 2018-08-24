@@ -34,12 +34,21 @@
 				<div class="menu-login">
 					<a class="menu-item menu-item-login" href="#">Вход</a>
 					<div class="sub-menu menu-login-sub">
-						<!--Здесь будет форма:
-							Логин
-							Пароль
-							Войти-->
-						<a href="#">Забыли пароль</a>
-						<a href="#">Новая регистрация</a>
+						<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+							<p>
+								<label class="visual-hidden" for="login-email">Введите электронной почты</label>
+								<input id="login-email" type="text" name="email" placeholder="Электронная почта">
+							</p>
+							<p>
+								<label class="visual-hidden" for="login-password">Введите пароль</label>
+								<input id="login-password" type="password" name="password" placeholder="Пароль">
+							</p>
+							<p class="login-link">
+								<a href="#">Забыли пароль?</a>
+								<a href="#">Новая регистрация</a>
+							</p>
+							<button class="button button-login" type="submit">Войти</button>
+						</form>
 					</div>
 				</div>
 				<div class="menu-cart">
