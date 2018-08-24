@@ -27,7 +27,7 @@
 					<div class="sub-menu menu-search-sub">
 						<form class="form-search" action="https://echo.htmlacademy.ru" method="post">
 								<label class="visual-hidden" for="main-search">Введите информацию для поиска</label>
-								<input id="main-search" type="text" name="search" placeholder="Что ищем?">	
+								<input id="main-search" type="search" name="search" placeholder="Что ищем?">	
 						</form>
 					</div>
 				</div>
@@ -36,12 +36,12 @@
 					<div class="sub-menu menu-login-sub">
 						<form class="form-login" action="https://echo.htmlacademy.ru" method="post">
 							<p>
-								<label class="visual-hidden" for="main-login-email">Введите электронной почты</label>
-								<input id="main-login-email" type="text" name="login-email" placeholder="Электронная почта">
+								<label class="visual-hidden" for="login-email">Введите электронную почту</label>
+								<input id="login-email" type="email" name="email" placeholder="Электронная почта">
 							</p>
 							<p>
-								<label class="visual-hidden" for="main-login-password">Введите пароль</label>
-								<input id="main-login-password" type="password" name="login-password" placeholder="Пароль">
+								<label class="visual-hidden" for="login-password">Введите пароль</label>
+								<input id="login-password" type="password" name="password" placeholder="Пароль">
 							</p>
 							<p class="login-link">
 								<a href="#">Забыли пароль?</a>
@@ -162,7 +162,7 @@
 				<form class="form-subscribe" action="https://echo.htmlacademy.ru" method="post">
 					<p>
 						<label class="visual-hidden" for="">Введите электронную почту</label>
-						<input id="subscribe-email-line" type="text" name="subscribe-email" placeholder="Электронная почта">
+						<input id="subscribe-email" type="email" name="email" placeholder="Электронная почта">
 					</p>
 					<button class="button" type="submit">Отправить</button>
 				</form>
@@ -208,11 +208,8 @@
 		</footer>
 		<section class="modal modal-feedback">
 			<b>Мы обязательно вам ответим!</b>
-			<!--Как вас зовут?
-				Ваша почта для ответа?
-				Напишите что-нибудь...
-				Отправить-->
-			<button class="modal-close" type="button" title="Закрыть">X</button>
+			
+			
 		</section>
 	</body>
 </html>
