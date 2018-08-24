@@ -91,52 +91,51 @@
 			</ul>
 			<section class="filters">
 				<h2 class="visual-hidden">Фильтр товаров</h2>
-				<form>
-					<ul class="filters-list">
-						<li class="filters-item filters-item-sort">
-							<h2 class="filters-item-contents">Сортирровка:</h2>
-							<select id="filters-item-sort" name="sort">
-								<option selected>по популярности</option>
-								<option>сначала недорогие</option>
-								<option>сначала дорогие</option>
-								<option>по жирности</option>
-							</select>
-						</li>
+				<form class="form-filters" action="https://echo.htmlacademy.ru" method="post">
+					<fieldset class="filters-item filters-item-sort">
+						<legend>Сортировка:</legend>
+						<select id="filters-item-sort" name="sort">
+							<option selected>по популярности</option>
+							<option>сначала недорогие</option>
+							<option>сначала дорогие</option>
+							<option>по жирности</option>
+						</select>
+					</fieldset>
 
-						<li class="filters-item filters-item-price">
-							<h2 class="filters-item-contents">Цена 100 руб. - 500 руб.</h2>
-							<div class="filter-item-price-scale">
-								<div class="scale">
-									<div class="bar"></div>
-								</div>
-								<div class="filters-item-price-toggle filters-item-price-toggle-min"></div>
-								<div class="filters-item-price-toggle filters-item-price-toggle-max"></div>
+					<fieldset class="filters-item filters-item-price">
+						<legend>Цена 100 руб. - 500 руб.</legend>
+						<div class="filter-item-price-scale">
+							<div class="scale">
+								<div class="bar"></div>
 							</div>
-						</li>
+							<div class="filters-item-price-toggle filters-item-price-toggle-min"></div>
+							<div class="filters-item-price-toggle filters-item-price-toggle-max"></div>
+						</div>
+					</fieldset>
 					
-						<li class="filters-item filters-item-richness">
-							<h2 class="filters-contents">Жирность:</h2>
-							<ul class="richness-list">
-								<li>
-									<label for="richness-0">0%</label>
-									<input class="visual-hidden" id="richness-0" type="radio" name="0">		
-								</li>
-								<li>
-									<label for="richness-10">до 10%</label>
-									<input class="visual-hidden" id="richness-10" type="radio" name="10">		
-								</li>
-								<li>
-									<label for="richness-30">до 30%</label>
-									<input class="visual-hidden" id="richness-30" type="radio" name="30">		
-								</li>
-								<li>
-									<label for="richness-30-above">выше 30%</label>
-									<input class="visual-hidden" id="richness-30-above" type="radio" name="30-above">
-								</li>
-							</ul>	
-						</li>
-						<li class="filters-item filters-item-fillers">
-							<h2 class="filters-item-contents">Наполнители:</h2>
+					<fieldset class="filters-item filters-item-richness">
+						<legend>Жирность:</legend>>
+						<ul class="richness-list">
+							<li>
+								<label for="richness-0">0%</label>
+								<input class="visual-hidden" id="richness-0" type="radio" name="0">		
+							</li>
+							<li>
+								<label for="richness-10">до 10%</label>
+								<input class="visual-hidden" id="richness-10" type="radio" name="10">		
+							</li>
+							<li>
+								<label for="richness-30">до 30%</label>
+								<input class="visual-hidden" id="richness-30" type="radio" name="30">		
+							</li>
+							<li>
+								<label for="richness-30-above">выше 30%</label>
+								<input class="visual-hidden" id="richness-30-above" type="radio" name="30-above">
+							</li>
+						</ul>	
+					</fieldset>
+						<fieldset class="filters-item filters-item-fillers">
+							<legend>Наполнители:</legend>
 							<ul class="fillers-list">
 								<li>
 									<label for="fillers-choco">шоколадные</label>
@@ -159,8 +158,8 @@
 									<input class="visual-hidden" id="fillers-jam" type="checkbox" name="jam">
 								</li>
 							</ul>
-						</li>
-					</ul>
+						</fieldset>
+					
 					<button class="button button-filters" type="submit">Применить</button>
 				</form>
 			</section>
