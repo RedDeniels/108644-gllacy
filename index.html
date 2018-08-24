@@ -25,7 +25,7 @@
 				<div class="menu-search">
 					<button class="button button-search">Поиск</button>
 					<div class="sub-menu menu-search-sub">
-						<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+						<form class="form-search" action="https://echo.htmlacademy.ru" method="post">
 								<label class="visual-hidden" for="main-search">Введите информацию для поиска</label>
 								<input id="main-search" type="text" name="search" placeholder="Что ищем?">	
 						</form>
@@ -34,14 +34,14 @@
 				<div class="menu-login">
 					<a class="menu-item menu-item-login" href="#">Вход</a>
 					<div class="sub-menu menu-login-sub">
-						<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+						<form class="form-login" action="https://echo.htmlacademy.ru" method="post">
 							<p>
-								<label class="visual-hidden" for="login-email">Введите электронной почты</label>
-								<input id="login-email" type="text" name="email" placeholder="Электронная почта">
+								<label class="visual-hidden" for="main-login-email">Введите электронной почты</label>
+								<input id="main-login-email" type="text" name="login-email" placeholder="Электронная почта">
 							</p>
 							<p>
-								<label class="visual-hidden" for="login-password">Введите пароль</label>
-								<input id="login-password" type="password" name="password" placeholder="Пароль">
+								<label class="visual-hidden" for="main-login-password">Введите пароль</label>
+								<input id="main-login-password" type="password" name="login-password" placeholder="Пароль">
 							</p>
 							<p class="login-link">
 								<a href="#">Забыли пароль?</a>
@@ -159,9 +159,13 @@
 			<section class="subscribe">
 				<h2 class="visual-hidden">Подписка на рассылку</h2>
 				<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-				<!--Здесь будет форма
-					Электронная почта
-					Отправить-->
+				<form class="form-subscribe" action="https://echo.htmlacademy.ru" method="post">
+					<p>
+						<label class="visual-hidden" for="">Введите электронную почту</label>
+						<input id="subscribe-email-line" type="text" name="subscribe-email" placeholder="Электронная почта">
+					</p>
+					<button class="button" type="submit">Отправить</button>
+				</form>
 			</section>
 			<section class="contacts">
 				<h2 class="visual-hidden">Как добраться</h2>
