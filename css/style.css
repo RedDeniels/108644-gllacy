@@ -128,4 +128,20 @@ a{
 	font-size: 35px;
 	line-height: 41px;
 }
-
+.hits-item{
+	list-style: none;
+}
+.hits-item h3{
+	font-size: 16px;
+	line-height: 22px;
+	text-decoration: underline;
+}
+.hits-item b{
+	font-size: 45px;
+	line-height: 45px;
+}
+.hits-item span{
+	font-size: 30px;
+	line-height: 45px;
+	font-weight: bold;
+}
