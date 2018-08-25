@@ -107,3 +107,25 @@ a{
 	font-size: 32px;
 	line-height: 44px;
 }
+.banners-item{
+	list-style: none;
+}
+.banners-item-raspberry{
+	background-color: #570a17;
+	background-image: url("../img/banners-raspberry.jpg");
+	background-repeat: no-repeat;
+}
+.banners-item-choco{
+	background-color: #3e2418;
+	background-image: url("../img/banners-choco.jpg");
+	background-repeat: no-repeat;
+}
+.banners p{
+	font-size: 18px;
+	line-height: 22px;
+}
+.banners h3{
+	font-size: 35px;
+	line-height: 41px;
+}
+
