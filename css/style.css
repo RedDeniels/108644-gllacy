@@ -32,7 +32,7 @@ a{
 }
 .site-navigation-sub a{
 	font-size: 14px;
-	font-weight: 16px;
+	line-height: 16px;
 	color: #323232;
 	background-color: #f8f7f4;
 }
@@ -52,7 +52,7 @@ a{
 .button{
 	font: inherit;
 	font-size: 18px;
-	font-weight: 24px;
+	line-height: 24px;
 	color: #ffffff;
 	border: none;
 	vertical-align: middle;
@@ -77,17 +77,33 @@ a{
 }
 .login-link{
 	font-size: 13px;
-	font-weight: 24px;
+	line-height: 24px;
 	color: #323232;
 	text-decoration: underline;
 }
 .main-contacts{
 	font-size: 14px;
-	font-weight: 16px;
+	line-height: 16px;
 	color: #ffffff;	
 }
 .main-contacts b{
 	font-size: 22px;
-	font-weight: 24px;
+	line-height: 24px;
 	color: #ffffff;
+}
+
+
+.slider h3{
+	font-size: 60px;
+	line-height: 60,35px;
+	font-weight: normal;
+	color: #ffffff;
+}
+.slider-list-item,
+.slider-toggle-list li{
+	list-style: none;
+}
+.button-slider{
+	font-size: 32px;
+	line-height: 44px;
 }
