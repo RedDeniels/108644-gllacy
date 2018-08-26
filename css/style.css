@@ -20,6 +20,9 @@ a{
 .site-navigation-sub{
 	list-style: none;
 }
+.site-navigation-current a{
+	background-color: #d07058;
+}
 .site-navigation-item>a{
 	color: #ffffff;
 	font-weight: bold;
@@ -57,6 +60,11 @@ a{
 	color: #323232;
 	background-color: rgba(248, 247, 244, 1);
 }
+.menu-cart .menu-item-cart-full{
+	color: #323232;
+	background-color: #f7f6f3;
+}
+
 .button{
 	font: inherit;
 	font-size: 18px;
@@ -103,7 +111,6 @@ a{
 	line-height: 24px;
 	color: #ffffff;
 }
-
 
 .slider h3{
 	font-size: 60px;
