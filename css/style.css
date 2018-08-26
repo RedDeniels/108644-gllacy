@@ -178,4 +178,13 @@ a{
 	line-height: 30px;
 	text-decoration: underline;
 }
-.
+.subscribe{
+	color: #323232;
+	font-size: 16px;
+	line-height: 22px;
+	background-color: #f8f7f4;
+	background-image: url("../img/subscribe-border.svg");
+}
+.subscribe-front{
+	background-color: #f8f7f4;
+}
