@@ -197,7 +197,24 @@ a{
 	background-color: #f8f7f4;	
 }
 .contacts b{
-	
 	font-size: 18px;
 	line-height: 24px;
+}
+.main-footer{
+	color: #ffffff;
+	font-size: 13px;
+	line-height: 18px;
+}
+.main-footer a{
+	color: #ffffff;
+	text-decoration: underline;
+}
+.footer-social ul{
+	list-style: none;
+}
+.footer-link-list{
+	list-style: none;
+}
+.footer-copyright{
+	font-size: 12px;
 }
