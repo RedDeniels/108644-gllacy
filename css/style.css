@@ -64,6 +64,29 @@ a{
 	color: #323232;
 	background-color: #f7f6f3;
 }
+.menu-cart-sub{
+	color: #323232;
+	background-color: #f8f7f4;
+}
+.cart-table-item-text a{
+	color: #323232;
+}
+.cart-table-item-text a:hover,
+.cart-table-item-text a:active{
+	color: #e84d37;
+}
+.menu-cart-sub b{
+	font-size: 15px;
+	line-height: 18px;
+}
+.cart-table{
+	color: #323232;
+	font-size: 13px;
+	line-height: 16px;
+}
+.cart-table-item-unit{
+	color: #999999;
+}
 
 .button{
 	font: inherit;
