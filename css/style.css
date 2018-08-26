@@ -218,3 +218,11 @@ a{
 .footer-copyright{
 	font-size: 12px;
 }
+.modal-feedback{
+	color: #323232;
+	background-color: #f8f7f4; 
+}
+.modal-feedback b{
+	font-size: 24px;
+	line-height: 28px;
+}
