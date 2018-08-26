@@ -135,6 +135,7 @@ a{
 	font-size: 16px;
 	line-height: 22px;
 	text-decoration: underline;
+	text-align: center;
 }
 .hits-item b{
 	font-size: 45px;
@@ -161,3 +162,20 @@ a{
 	font-size: 16px;
 	line-height: 22px;
 }
+.blog-news{
+	background-color: #ffffff;
+	background-image: url("../img/blog-sherbet.jpg");
+	background-repeat: no-repeat; 
+}
+.blog-news p{
+	color: #323232;
+	font-size: 16px;
+	line-height: 22px;
+}
+.blog-news h3{
+	color: #323232;
+	font-size: 24px;
+	line-height: 30px;
+	text-decoration: underline;
+}
+.
