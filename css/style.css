@@ -147,6 +147,57 @@ a{
 .bredcrumbs a:active{
 	color: #ffbc9e;
 }
+.form-filters ul{
+	list-style: none;
+}
+.form-filters legend{
+	font-size: 14px;
+	line-height: 16px;
+}
+.form-filters input{
+	font-size: 16px;
+	font-weight: 18px;
+}
+.form-filters select{
+	color: #ffffff;
+	background: none;
+	border: none;
+}
+.form-filters select:hover,
+.form-filters select:focus{
+	color: #323232;
+}
+.form-filters option{
+	color: #323232;
+}
+.filters-item{
+	border: none;
+	border-radius: 36px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.button-filters{
+	border: 2px solid #ffffff;
+	border-radius: 36px;
+	background-color: #a6b7ae;
+	background-image: none;
+	box-shadow: none;
+	text-shadow: none;
+}
+.button-filters:hover{
+	color: #323232;
+	background-color: #fbfcfb;
+	background-image: none;
+	box-shadow: none;
+	text-shadow: none;
+}
+.button-filters:active{
+	color: #323232;
+	background-image: none;
+	box-shadow: none;
+	text-shadow: none;
+	background-color: rgb(237, 237, 237);
+	box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
+}
 .slider h3{
 	font-size: 60px;
 	line-height: 60px;
