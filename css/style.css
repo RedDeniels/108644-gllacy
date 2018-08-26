@@ -95,7 +95,7 @@ a{
 
 .slider h3{
 	font-size: 60px;
-	line-height: 60,35px;
+	line-height: 60px;
 	font-weight: normal;
 	color: #ffffff;
 }
@@ -132,8 +132,6 @@ a{
 	list-style: none;
 }
 .hits-item h3{
-	font-size: 16px;
-	line-height: 22px;
 	text-decoration: underline;
 	text-align: center;
 }
@@ -158,10 +156,7 @@ a{
 .features-item{
 	list-style: none;
 }
-.features-item p{
-	font-size: 16px;
-	line-height: 22px;
-}
+
 .blog-news{
 	background-color: #ffffff;
 	background-image: url("../img/blog-sherbet.jpg");
@@ -169,8 +164,6 @@ a{
 }
 .blog-news p{
 	color: #323232;
-	font-size: 16px;
-	line-height: 22px;
 }
 .blog-news h3{
 	color: #323232;
@@ -180,15 +173,11 @@ a{
 }
 .subscribe{
 	color: #323232;
-	font-size: 16px;
-	line-height: 22px;
 	background-color: #f8f7f4;
 	background-image: url("../img/subscribe-border.svg");
 }
 .subscribe-front{
 	background-color: #f8f7f4;
-	font-size: 16px;
-	line-height: 22px;
 }
 .contacts{
 	color: #323232;
