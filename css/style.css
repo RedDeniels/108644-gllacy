@@ -42,6 +42,14 @@ a{
 .site-navigation-sub a:active{
 	background-color: #f6b5a5;
 }
+.form input,
+.form-search input{
+	padding: 15px;
+	color: #999999;
+	background-color: #ffffff;
+	border: 2px solid #d3d3d2;
+	border-radius: 6px;
+}
 .menu-item{
 	background-color: rgba(248, 247, 244, 0.2);
 }
@@ -178,6 +186,20 @@ a{
 }
 .subscribe-front{
 	background-color: #f8f7f4;
+}
+.subscribe input,
+.modal-feedback input,
+.modal-feedback textarea{
+	padding: 15px;
+	font-size: 16px;
+	line-height: 24px;
+	color: #999999;
+	background-color: #ffffff;
+	border: 2px solid #d3d3d2;
+	border-radius: 6px;
+}
+.modal-feedback textarea{
+	resize: none;
 }
 .contacts{
 	color: #323232;
