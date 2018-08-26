@@ -134,7 +134,19 @@ a{
 	line-height: 24px;
 	color: #ffffff;
 }
-
+.bredcrumbs{
+	font-size: 14px;
+	line-height: 16px;
+	list-style: none;
+}
+.bredcrumbs a{
+	text-decoration: underline;
+	color: #ffffff;
+}
+.bredcrumbs a:hover,
+.bredcrumbs a:active{
+	color: #ffbc9e;
+}
 .slider h3{
 	font-size: 60px;
 	line-height: 60px;
