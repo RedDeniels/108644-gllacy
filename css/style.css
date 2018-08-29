@@ -23,17 +23,18 @@ a{
 .main-header{
 	display: flex;
 	justify-content: center;
+	min-width: 900px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .container-header{
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-	width: 95.5%;
-    min-width: 900px;
-    max-width: 1200px;
+    width: 95.5%;
     margin-bottom: 10px;
-    padding-right: 4.5%;
-    padding-left: 4.5%;
+    padding-right: 2.25%;
+    padding-left: 2.25%;
 }
 .main-navigation{
 	width: 100%;
@@ -43,7 +44,7 @@ a{
 .main-navigation a{
     color: #fff;
 }
-.main-container{
+.navigation-container{
 	display: flex;
 }
 .main-logo{
@@ -157,11 +158,14 @@ a{
 .button{
     font: inherit;
     font-size: 18px;
-    line-height: 24px;
-
+    line-height: 46px;
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 26px;
     text-align: center;
     vertical-align: middle;
-
+	
     color: #fff;
     border: none;
     background-image:    -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
@@ -280,6 +284,11 @@ a{
     color: #fff;
     margin-bottom: 25px;
     font-weight: bold;
+    width: 690px;
+}
+.slider-list{
+	padding: 0;
+	margin: 0;
 }
 .slider-list-item,
 .slider-toggle-list li{
@@ -312,8 +321,37 @@ a{
 }
 .slider-toggle-list{
 	display: flex;
+	padding: 0;
+	margin: 0;
+	margin-left: 2.25%;
 }
-
+.banners{
+	width: 95%;
+	margin-left: 2.25%;
+	margin-right: 2.25%;
+	margin-top: 40px;
+	display: flex;
+	flex-direction: : column;
+	justify-content: center;
+}
+.banners-list{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.banners-item{
+	min-width: 420px;
+	max-width: 520px;
+    list-style: none;
+    border-radius: 14px;
+    padding: 20px;
+    padding-top: 15px;
+}
+.banners-item:first-child{
+	margin-right: 4.5%;
+}
 .banners-item-raspberry{
     background-color: #570a17;
     background-image: url('../img/banners-raspberry.jpg');
@@ -329,8 +367,14 @@ a{
     line-height: 22px;
 }
 .banners h3{
+	margin: 0;
     font-size: 35px;
     line-height: 41px;
+}
+.main-container{
+	margin: 0 auto;
+	max-width: 1200px;
+	min-width: 900px;
 }
 .hits-item{
     list-style: none;
