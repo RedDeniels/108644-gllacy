@@ -276,20 +276,44 @@ a{
     font-size: 60px;
     font-weight: normal;
     line-height: 60px;
-
+	text-align: center;
     color: #fff;
+    margin-bottom: 25px;
+    font-weight: bold;
 }
 .slider-list-item,
 .slider-toggle-list li{
     list-style: none;
 }
+.slider-list-item{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	min-height: 500px;
+	position: relative;
+}
+.slider-list-item img{
+	order: -1;
+	position: absolute;
+	z-index: -1;
+	top: -178px;
+}
+.slider-list-item-strawberry,
+.slider-list-item-lemon{
+	display: none;
+}
 .button-slider{
     font-size: 32px;
-    line-height: 44px;
+    line-height: 64px;
+    width: 278px;
+    border-radius: 32px;
+    font-weight: bold;
 }
-.banners-item{
-    list-style: none;
+.slider-toggle-list{
+	display: flex;
 }
+
 .banners-item-raspberry{
     background-color: #570a17;
     background-image: url('../img/banners-raspberry.jpg');
