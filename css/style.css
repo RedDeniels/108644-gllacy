@@ -541,13 +541,23 @@ a{
 .contacts{
     font-size: 14px;
     line-height: 20px;
-
+	position: relative;
     color: #323232;
-    background-color: #f8f7f4;
 }
 .contacts b{
     font-size: 18px;
     line-height: 24px;
+}
+.feedback{
+	position: absolute;
+	background-color: #f8f7f4;
+	top: 80px;
+	right: 50px;
+	border-radius: 15px;
+	padding: 20px;
+}
+.feedback p{
+	margin-top: 0;
 }
 .pagination-list{
     list-style: none;
@@ -585,7 +595,7 @@ a{
 }
 .main-footer a{
     text-decoration: underline;
-
+	
     color: #fff;
 }
 .main-footer a:hover,
