@@ -627,6 +627,8 @@ a{
 }
 .pagination-list{
     list-style: none;
+    display: flex;
+    justify-content: flex-end;
 
     color: #fff;
 }
