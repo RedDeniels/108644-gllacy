@@ -229,11 +229,20 @@ a{
 
     color: #fff;
 }
+.big-container{
+	width: 95.5%;
+	margin: 0 auto;
+}
+.title-container{
+	display: flex;
+	flex-direction: column-reverse;
+}
 .bredcrumbs{
     font-size: 14px;
     line-height: 16px;
-
+	padding: 0;
     list-style: none;
+    display: flex;
 }
 .bredcrumbs a{
     text-decoration: underline;
@@ -348,9 +357,6 @@ a{
 	margin-left: 2.25%;
 }
 .banners{
-	width: 95%;
-	margin-left: 2.25%;
-	margin-right: 2.25%;
 	margin-bottom: 35px;
 	display: flex;
 	flex-direction: : column;
@@ -399,8 +405,6 @@ a{
 	min-width: 900px;
 }
 .hits-list{
-	width: 95.5%;
-	margin: 0 auto;
 	padding: 0;
 	display: flex;
 	justify-content: space-between;
@@ -456,8 +460,6 @@ a{
     color: #323232;
     background-color: #e3dac3;
     background-image: url('../img/features-pattern.jpg');
-	width: 95.5%;
-	margin: 0 auto;
 	padding: 20px;
 	padding-top: 30px;
 	border-radius: 15px;
@@ -485,8 +487,6 @@ a{
 	margin: 0;
 }
 .row-container{
-	width: 95.5%;
-	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 40px;
