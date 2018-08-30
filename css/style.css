@@ -130,9 +130,24 @@ a{
     color: #323232;
     background-color: #f7f6f3;
 }
+.menu-cart{
+	position: relative;
+}
 .menu-cart-sub{
     color: #323232;
     background-color: #f8f7f4;
+	position: absolute;
+	min-width: 540px;
+	right: 0px;
+	top: 65px;
+	border-radius: 15px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+
+	/*иначе мешает*/
+	display: none;
 }
 .cart-table-item-text a{
     color: #323232;
@@ -148,8 +163,11 @@ a{
 .cart-table{
     font-size: 13px;
     line-height: 16px;
-
+	margin-bottom: 30px;
     color: #323232;
+}
+.cart-totals{
+	margin-bottom: 10px;
 }
 .cart-table-item-unit{
     color: #999;
@@ -632,6 +650,8 @@ a{
 .modal-feedback{
     color: #323232;
     background-color: #f8f7f4;
+
+    display: none;
 }
 .modal-feedback b{
     font-size: 24px;
