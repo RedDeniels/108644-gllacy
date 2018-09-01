@@ -8,10 +8,17 @@ body{
     line-height: 22px;
 
     color: #ffffff;
-    background-color: #849d8f;
 }
 a{
     text-decoration: none;
+}
+.site-wrapper{
+    z-index: -100;
+
+    background-color: #849d8f;
+    background-image: url('../img/slider-raspberry.png');
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 .visual-hidden{
     clip: rect(0 0 0 0);
@@ -192,10 +199,10 @@ a{
     display: inline-block;
 
     padding: 0;
-    padding-right: 20px;
-    padding-left: 20px;
     padding-top: 11px;
+    padding-right: 20px;
     padding-bottom: 11px;
+    padding-left: 20px;
 
     font: inherit;
     font-size: 18px;
@@ -369,9 +376,9 @@ a{
     text-shadow: none;
 }
 .slider{
-    margin-bottom: 40px;
     width: 95.5%;
     margin: 0 auto;
+    margin-bottom: 40px;
 }
 .slider h3{
     width: 690px;
@@ -397,19 +404,18 @@ a{
 .slider-list-item{
     display: flex;
     flex-direction: column;
+
     position: relative;
 
     min-height: 500px;
 
+    background-repeat: no-repeat;
+    background-position: center 40%;
+
     justify-content: flex-end;
     align-items: center;
-    background-position: center 40%;
-    background-repeat: no-repeat;
-	
 }
-.slider-list-item-raspberry{
-	background-image: url("../img/slider-raspberry.png");
-}
+
 .slider-list-item img{
     position: absolute;
     z-index: -1;
@@ -423,12 +429,12 @@ a{
 }
 .button-slider{
     width: 278px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     font-size: 32px;
     font-weight: bold;
     line-height: 44px;
-    padding-top: 10px;
-    padding-bottom: 10px;
 
     border-radius: 32px;
 }
@@ -443,12 +449,11 @@ a{
     display: flex;
     flex-direction: : column;
 
+    width: 95.5%;
+    margin: 0 auto;
     margin-bottom: 35px;
 
     justify-content: center;
-
-    width: 95.5%;
-    margin: 0 auto;
 }
 .banners-list{
     display: flex;
@@ -460,24 +465,24 @@ a{
     justify-content: space-between;
 }
 .banners-item{
+    display: flex;
+    flex-direction: column;
+
     box-sizing: border-box;
     width: 48.85%;
-
     min-height: 230px;
     padding: 20px;
     padding-top: 15px;
-	
+
     list-style: none;
 
     border-radius: 14px;
 
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
 }
 .banners-item .button{
-	margin-top: auto;
-	margin-left: auto;
+    margin-top: auto;
+    margin-left: auto;
 }
 
 .banners-item-raspberry{
@@ -491,9 +496,10 @@ a{
     background-repeat: no-repeat;
 }
 .banners p{
+    margin: 0;
+
     font-size: 18px;
     line-height: 22px;
-    margin: 0;
 }
 .banners h3{
     margin: 0;
@@ -517,9 +523,9 @@ a{
     justify-content: space-between;
 }
 .hits{
-	width: 95.5%;
+    width: 95.5%;
     margin: 0 auto;
-} 
+}
 .hits-list{
     display: flex;
 
@@ -529,7 +535,8 @@ a{
 }
 .hits-item{
     display: flex;
-	
+    flex-direction: column;
+
     width: 22.25%;
     min-width: 200px;
     min-height: 300px;
@@ -537,14 +544,13 @@ a{
     list-style: none;
 
     flex-wrap: wrap;
-	flex-direction: column;
-	justify-content: flex-start;
+    justify-content: flex-start;
 }
 .hits-item:hover{
     background-color: rgba(255, 255, 255, 0.2);
 }
 .hits-item h3{
-	margin-top: 0px;
+    margin-top: 0px;
     margin-bottom: 15px;
 
     text-align: center;
@@ -553,7 +559,6 @@ a{
     order: 2;
 }
 .hits-item b{
-
     font-size: 45px;
     line-height: 45px;
 }
@@ -563,12 +568,13 @@ a{
     line-height: 45px;
 }
 .hits-item-price{
-	margin-top: -60px;
-	margin-bottom: 20px;
+    z-index: 2;
 
+    margin-top: -60px;
+    margin-bottom: 20px;
 }
 .hits-item img{
-    z-index: -1;
+    z-index: 1;
 
     width: 100%;
     height: auto;
@@ -584,13 +590,12 @@ a{
     order: 3;
 }
 .features{
-	width: 95.5%;
-    margin: 0 auto;
     box-sizing: border-box;
+    width: 95.5%;
+    margin: 0 auto;
     margin-bottom: 40px;
     padding: 20px;
     padding-top: 30px;
-
 
     color: #323232;
     border-radius: 15px;
@@ -604,6 +609,8 @@ a{
     line-height: 30px;
 }
 .features-list{
+    display: flex;
+
     margin: 0;
     padding: 0;
 
@@ -611,61 +618,64 @@ a{
 
     list-style: none;
 
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 .features-item{
+    position: relative;
+
     box-sizing: border-box;
     width: 48%;
-    padding-left: 50px;
     margin-top: 30px;
-    position: relative;
+    padding-left: 50px;
 }
 .features-item p{
     margin: 0;
-	
+
     font-size: 16px;
 }
 .features-item::before{
-	content: " ";
-	width: 49px;
-	height: 49px;
-	position: absolute;
-	left: -5px;
-	top: -14px;
+    position: absolute;
+    top: -14px;
+    left: -5px;
+
+    width: 49px;
+    height: 49px;
+
+    content: ' ';
 }
 .features-item-technology::before{
-	background-image: url("../img/features-icecream.svg");
+    background-image: url('../img/features-icecream.svg');
 }
 .features-item-contract::before{
-	background-image: url("../img/features-cow.svg");
+    background-image: url('../img/features-cow.svg');
 }
 .features-item-ecology::before{
-	background-image: url("../img/features-eco.svg");
+    background-image: url('../img/features-eco.svg');
 }
 .features-item-thermo::before{
-	background-image: url("../img/features-thermometer.svg");
+    background-image: url('../img/features-thermometer.svg');
 }
 .row-container{
-	width: 95.5%;
-    margin: 0 auto;
     display: flex;
 
+    width: 95.5%;
+    margin: 0 auto;
     margin-bottom: 40px;
 
     justify-content: space-between;
 }
 .row-container-item{
-	box-sizing: border-box;
+    box-sizing: border-box;
     width: 48.85%;
     min-height: 220px;
 }
 .blog-news{
     display: flex;
     flex-direction: column;
-	
-	padding: 20px;
+
+    padding: 20px;
+
     border-radius: 15px;
     background-color: #ffffff;
     background-image: url('../img/blog-sherbet.jpg');
@@ -679,7 +689,8 @@ a{
     order: -1;
 }
 .blog-news h3{
-	display: inline;
+    display: inline;
+
     width: 300px;
 
     font-size: 24px;
@@ -691,10 +702,11 @@ a{
     background-color: rgba(255, 255, 255, 0.8);
 }
 .blog-news-link{
-	width: 290px;
+    width: 290px;
 }
 .subscribe{
-	padding: 6px;
+    padding: 6px;
+
     color: #323232;
     border-radius: 15px;
     background-color: #f8f7f4;
@@ -708,27 +720,27 @@ a{
     border-radius: 15px;
     background-color: #f8f7f4;
 }
-.subscribe-front>p{
+.subscribe-front > p{
     margin: 0;
     margin-bottom: 30px;
 }
 .form-subscribe{
     display: flex;
+
     justify-content: space-between;
-	align-items: center;
+    align-items: center;
 }
 .form-subscribe p{
-	width: 100%;
-	margin: 0;
-	margin-right: 10px;
-
+    width: 100%;
+    margin: 0;
+    margin-right: 10px;
 }
 .form-subscribe .button{
-	height: 46px;
+    height: 46px;
 }
 .form-subscribe input{
-	box-sizing: border-box;
-	width: 100%;
+    box-sizing: border-box;
+    width: 100%;
 }
 .subscribe input,
 .modal-feedback input,
@@ -747,34 +759,38 @@ a{
     resize: none;
 }
 .contacts{
+    overflow: hidden;
+
     position: relative;
-	
+
     font-size: 14px;
     line-height: 20px;
-	
-	overflow: hidden;
+
     color: #323232;
 }
 .contacts b{
     font-size: 18px;
     line-height: 24px;
-    
 }
 .contacts-container{
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	height: 430px;
+    display: flex;
+
+    height: 430px;
+
+    justify-content: flex-end;
+    align-items: center;
 }
 .map{
-	width: 100%;
-	height: auto;
-	position: absolute;
-	z-index: -1;
+    position: absolute;
+    z-index: 1;
 
+    width: 100%;
+    height: auto;
 }
 .feedback{
-	margin-right: 2.25%;
+    z-index: 2;
+
+    margin-right: 2.25%;
     padding: 20px;
 
     border-radius: 15px;
@@ -827,8 +843,9 @@ a{
     color: #ffffff;
 }
 .main-footer .container{
-	display: flex;
-	justify-content: space-between;
+    display: flex;
+
+    justify-content: space-between;
 }
 .main-footer a{
     text-decoration: underline;
@@ -838,6 +855,9 @@ a{
 .main-footer a:hover,
 .main-footer a:active{
     color: #ffbc9e;
+}
+.footer-social{
+    margin-left: 2.25%;
 }
 .footer-social ul{
     display: flex;
@@ -850,8 +870,8 @@ a{
 .footer-link-list{
     display: flex;
     flex-direction: column;
-	
-	width: 315px;
+
+    width: 315px;
     height: 50px;
     padding: 0;
 
@@ -863,6 +883,8 @@ a{
     margin-right: 30px;
 }
 .footer-copyright{
+    margin-right: 2.25%;
+
     font-size: 12px;
 }
 .modal-feedback{
