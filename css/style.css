@@ -452,9 +452,10 @@ a{
     justify-content: space-between;
 }
 .banners-item{
-    min-width: 420px;
-    max-width: 520px;
-    min-height: 195px;
+    box-sizing: border-box;
+    width: 48.85%;
+
+    min-height: 230px;
     padding: 20px;
     padding-top: 15px;
 	
@@ -645,14 +646,16 @@ a{
 
     justify-content: space-between;
 }
+.row-container-item{
+	box-sizing: border-box;
+    width: 48.85%;
+    min-height: 220px;
+}
 .blog-news{
     display: flex;
     flex-direction: column;
-
-    width: 48.5%;
-    margin-right: 4.5%;
-    padding: 20px;
-
+	
+	padding: 20px;
     border-radius: 15px;
     background-color: #ffffff;
     background-image: url('../img/blog-sherbet.jpg');
@@ -666,6 +669,7 @@ a{
     order: -1;
 }
 .blog-news h3{
+	display: inline;
     width: 300px;
 
     font-size: 24px;
@@ -676,10 +680,11 @@ a{
     color: #323232;
     background-color: rgba(255, 255, 255, 0.8);
 }
+.blog-news-link{
+	width: 290px;
+}
 .subscribe{
-    width: 48.5%;
-    padding: 6px;
-
+	padding: 6px;
     color: #323232;
     border-radius: 15px;
     background-color: #f8f7f4;
@@ -700,6 +705,7 @@ a{
 .form-subscribe{
     display: flex;
 }
+
 
 .subscribe input,
 .modal-feedback input,
