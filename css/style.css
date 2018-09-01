@@ -453,16 +453,23 @@ a{
 .banners-item{
     min-width: 420px;
     max-width: 520px;
+    min-height: 195px;
     padding: 20px;
     padding-top: 15px;
-
+	
     list-style: none;
 
     border-radius: 14px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
-.banners-item:first-child{
-    margin-right: 4.5%;
+.banners-item .button{
+	margin-top: auto;
+	margin-left: auto;
 }
+
 .banners-item-raspberry{
     background-color: #570a17;
     background-image: url('../img/banners-raspberry.jpg');
@@ -476,9 +483,11 @@ a{
 .banners p{
     font-size: 18px;
     line-height: 22px;
+    margin: 0;
 }
 .banners h3{
     margin: 0;
+    margin-bottom: 15px;
 
     font-size: 35px;
     line-height: 41px;
@@ -582,18 +591,42 @@ a{
     font-size: 0;
 
     list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .features-item{
-    display: inline-block;
-
     box-sizing: border-box;
-    width: 50%;
-    padding-left: 60px;
+    width: 48%;
+    padding-left: 50px;
+    margin-top: 30px;
+    position: relative;
 }
 .features-item p{
     margin: 0;
-
+	
     font-size: 16px;
+}
+.features-item::before{
+	content: " ";
+	width: 49px;
+	height: 49px;
+	position: absolute;
+	left: -5px;
+	top: -14px;
+}
+.features-item-technology::before{
+	background-image: url("../img/features-icecream.svg");
+}
+.features-item-contract::before{
+	background-image: url("../img/features-cow.svg");
+}
+.features-item-ecology::before{
+	background-image: url("../img/features-eco.svg");
+}
+.features-item-thermo::before{
+	background-image: url("../img/features-thermometer.svg");
 }
 .row-container{
     display: flex;
