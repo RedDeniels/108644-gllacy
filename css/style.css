@@ -826,6 +826,10 @@ a{
 
     color: #ffffff;
 }
+.main-footer .container{
+	display: flex;
+	justify-content: space-between;
+}
 .main-footer a{
     text-decoration: underline;
 
@@ -846,7 +850,8 @@ a{
 .footer-link-list{
     display: flex;
     flex-direction: column;
-
+	
+	width: 315px;
     height: 50px;
     padding: 0;
 
