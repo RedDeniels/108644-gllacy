@@ -36,9 +36,8 @@ a{
     flex-direction: column;
 
     width: 95.5%;
+    margin: 0 auto;
     margin-bottom: 10px;
-    padding-right: 2.25%;
-    padding-left: 2.25%;
 
     align-items: flex-end;
 }
@@ -503,7 +502,7 @@ a{
     font-size: 35px;
     line-height: 41px;
 }
-.main-container{
+.container{
     min-width: 900px;
     max-width: 1200px;
     margin: 0 auto;
