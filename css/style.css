@@ -248,10 +248,6 @@ a{
 
     color: #ffffff;
 }
-.big-container{
-    width: 95.5%;
-    margin: 0 auto;
-}
 .title-container{
     display: flex;
     flex-direction: column-reverse;
@@ -373,6 +369,8 @@ a{
 }
 .slider{
     margin-bottom: 40px;
+    width: 95.5%;
+    margin: 0 auto;
 }
 .slider h3{
     width: 690px;
@@ -440,6 +438,9 @@ a{
     margin-bottom: 35px;
 
     justify-content: center;
+
+    width: 95.5%;
+    margin: 0 auto;
 }
 .banners-list{
     display: flex;
@@ -506,6 +507,10 @@ a{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.hits{
+	width: 95.5%;
+    margin: 0 auto;
+} 
 .hits-list{
     display: flex;
 
@@ -568,10 +573,13 @@ a{
     order: 3;
 }
 .features{
+	width: 95.5%;
+    margin: 0 auto;
     box-sizing: border-box;
     margin-bottom: 40px;
     padding: 20px;
     padding-top: 30px;
+
 
     color: #323232;
     border-radius: 15px;
@@ -629,6 +637,8 @@ a{
 	background-image: url("../img/features-thermometer.svg");
 }
 .row-container{
+	width: 95.5%;
+    margin: 0 auto;
     display: flex;
 
     margin-bottom: 40px;
@@ -709,22 +719,33 @@ a{
 }
 .contacts{
     position: relative;
-
+	
     font-size: 14px;
     line-height: 20px;
-
+	
+	overflow: hidden;
     color: #323232;
 }
 .contacts b{
     font-size: 18px;
     line-height: 24px;
+    
 }
+.contacts-container{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 430px;
+}
+.map{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	z-index: -1;
 
+}
 .feedback{
-    position: absolute;
-    top: 80px;
-    right: 50px;
-
+	margin-right: 2.25%;
     padding: 20px;
 
     border-radius: 15px;
@@ -765,14 +786,7 @@ a{
     color: #323232;
     background-color: #f8f7f4;
 }
-.main-footer .container{
-    display: flex;
 
-    width: 95.5%;
-    margin: 0 auto;
-
-    justify-content: space-between;
-}
 .main-footer{
     min-width: 900px;
     max-width: 1200px;
