@@ -375,8 +375,6 @@ a{
     text-shadow: none;
 }
 .slider{
-    width: 95.5%;
-    margin: 0 auto;
     margin-bottom: 40px;
 }
 .slider h3{
@@ -446,9 +444,7 @@ a{
 }
 .banners{
     display: flex;
-    flex-direction: : column;
 
-    width: 95.5%;
     margin: 0 auto;
     margin-bottom: 35px;
 
@@ -511,6 +507,9 @@ a{
     min-width: 900px;
     max-width: 1200px;
     margin: 0 auto;
+    box-sizing: border-box;
+    padding-left: 2.25%;
+    padding-right: 2.25%;
 }
 .catalog-list{
     display: flex;
@@ -520,10 +519,6 @@ a{
 
     flex-wrap: wrap;
     justify-content: space-between;
-}
-.hits{
-    width: 95.5%;
-    margin: 0 auto;
 }
 .hits-list{
     display: flex;
@@ -590,8 +585,6 @@ a{
 }
 .features{
     box-sizing: border-box;
-    width: 95.5%;
-    margin: 0 auto;
     margin-bottom: 40px;
     padding: 20px;
     padding-top: 30px;
@@ -657,9 +650,6 @@ a{
 }
 .row-container{
     display: flex;
-
-    width: 95.5%;
-    margin: 0 auto;
     margin-bottom: 40px;
 
     justify-content: space-between;
@@ -789,7 +779,6 @@ a{
 .feedback{
     z-index: 2;
 
-    margin-right: 2.25%;
     padding: 20px;
 
     border-radius: 15px;
@@ -841,7 +830,7 @@ a{
 
     color: #ffffff;
 }
-.main-footer .container{
+.main-footer.container{
     display: flex;
 
     justify-content: space-between;
@@ -854,9 +843,6 @@ a{
 .main-footer a:hover,
 .main-footer a:active{
     color: #ffbc9e;
-}
-.footer-social{
-    margin-left: 2.25%;
 }
 .footer-social ul{
     display: flex;
@@ -882,8 +868,6 @@ a{
     margin-right: 30px;
 }
 .footer-copyright{
-    margin-right: 2.25%;
-
     font-size: 12px;
 }
 .modal-feedback{
