@@ -734,7 +734,7 @@ a{
 }
 .row-container{
     display: flex;
-    margin-bottom: 40px;
+    flex-wrap: wrap;
 
     justify-content: space-between;
 }
@@ -742,12 +742,15 @@ a{
     box-sizing: border-box;
     width: 48.85%;
     min-height: 220px;
+    padding: 20px;
+    margin-bottom: 40px;
 }
 .blog-news{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 
-    padding: 20px;
+    
 
     border-radius: 15px;
     background-color: #ffffff;
@@ -789,13 +792,17 @@ a{
     box-sizing: border-box;
     height: 100%;
     padding: 20px;
+    padding-top: 32px;
 
     border-radius: 15px;
     background-color: #f8f7f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .subscribe-front > p{
     margin: 0;
-    margin-bottom: 30px;
+
 }
 .form-subscribe{
     display: flex;
