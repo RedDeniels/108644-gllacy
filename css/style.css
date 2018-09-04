@@ -15,9 +15,9 @@ a{
 .site-wrapper{
 	background-color: #849d8f;
 }
-.site-wrapper.site-wrapper-index{
+.site-wrapper-index{
     z-index: -100;
-
+    transition: background-image 0.5s ease, background-color 0.5s ease;
     
     background-image: url('../img/slider-raspberry.png');
     background-repeat: no-repeat;
@@ -277,6 +277,8 @@ a{
     background-image:     -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
     box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
     text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+    cursor: pointer;
 }
 .button:hover{
     background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
@@ -431,6 +433,8 @@ a{
 }
 .slider{
     margin-bottom: 40px;
+    position: relative;
+    padding-top: 270px;
 }
 .slider h3{
     width: 690px;
@@ -454,26 +458,12 @@ a{
     list-style: none;
 }
 .slider-list-item{
-    display: flex;
-    flex-direction: column;
-
-    position: relative;
-
-    min-height: 500px;
-
-    background-repeat: no-repeat;
-    background-position: center 40%;
-
-    justify-content: flex-end;
-    align-items: center;
+    display: block;
+    text-align: center;
 }
-
-.slider-list-item img{
-    position: absolute;
-    z-index: -1;
-    top: -178px;
-
-    order: -1;
+.slider-list-item h3{
+    margin: 0 auto;
+    margin-bottom: 35px;
 }
 .slider-list-item-strawberry,
 .slider-list-item-lemon{
@@ -491,11 +481,50 @@ a{
     border-radius: 32px;
 }
 .slider-toggle-list{
+    position: absolute;
     display: flex;
+    top: 450px;
+    left: -40px;
+    font-size: 0;
 
-    margin: 0;
-    margin-left: 2.25%;
-    padding: 0;
+    z-index: 20;
+}
+.slider-toggle-list label{
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-right: 8px;
+
+    vertical-align: top;
+
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#product-1:checked ~ #slide-1,
+#product-2:checked ~ #slide-2,
+#product-3:checked ~ #slide-3{
+    display: block;
+}
+#product-1:checked ~ label[for="product-1"],
+#product-2:checked ~ label[for="product-2"],
+#product-3:checked ~ label[for="product-3"] {
+    background-color: #ffffff;
+}
+#product-1:checked ~ .site-wrapper-index {
+    background-color: #849d8f;
+    background-image: url("../img/slider-raspberry.png");
+}
+
+#product-2:checked ~ .site-wrapper-index {
+    background-color: #8996a6;
+    background-image: url("../img/slider-lemon.png");
+}
+
+#product-3:checked ~ .site-wrapper-index {
+    background-color: #9d8b84;
+    background-image: url("../img/slider-strawberry.png");
 }
 .banners{
     display: flex;
@@ -559,12 +588,11 @@ a{
     line-height: 41px;
 }
 .container{
-    min-width: 900px;
-    max-width: 1200px;
+    min-width: calc(900px - 20px*2);
+    max-width: calc(1200px - 27px*2);
     margin: 0 auto;
     box-sizing: border-box;
-    padding-left: 2.25%;
-    padding-right: 2.25%;
+    width: calc(100vw - 4.5%);
 }
 .catalog-list{
     display: flex;
