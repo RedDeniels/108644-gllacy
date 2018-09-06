@@ -60,8 +60,9 @@ a{
     display: flex;
 
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     padding: 0;
+    padding-left: 12px;
 
     list-style: none;
 }
@@ -71,22 +72,24 @@ a{
 
     list-style: none;
 }
-.site-navigation-current a{
-    background-color: #d07058;
-}
 .site-navigation-item > a{
     display: block;
 
     padding-top: 7px;
     padding-bottom: 7px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 13px;
+    padding-right: 13px;
+
     border-radius: 20px;
     font-weight: bold;
 
     text-decoration: underline;
 
     color: #ffffff;
+}
+.site-navigation-item .site-navigation-current{
+    background-color: #d07058;
+    text-decoration: none;
 }
 .site-navigation-item > a:hover{
     text-decoration: none;
@@ -120,7 +123,7 @@ a{
     position: absolute;
     height: 32px;
     width: 32px;
-    bottom: 20px;
+    bottom: 18px;
     left: -32px;
     border-radius: 50%;
     background-color: rgba(248, 247, 244, 0.2);
@@ -161,8 +164,8 @@ a{
     position: absolute;
     height: 32px;
     width: 32px;
-    bottom: 20px;
-    left: 18px;
+    bottom: 17px;
+    left: 21px;
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -180,18 +183,24 @@ a{
     background-image: url("../img/header-basket-black.svg");
 }
 .menu-item{
+    font-size: 14px;
     line-height: 16px;
-    margin: 20px;
+    margin-bottom: 17px;
     margin-right: 0;
     margin-left: 10px;
-    padding: 8px;
-    padding-right: 15px;
-    padding-left: 40px;
+    margin-top: 23px;
+    padding-top: 8px;
+    padding-right: 17px;
+    padding-left: 45px;
+    padding-bottom: 8px;
 
     border-radius: 20px;
     background-color: rgba(248, 247, 244, 0.2);
 }
-
+.main-navigation .menu-item-cart-full{
+    background-color: #f7f6f3;
+    color: #323232;
+}
 .menu-item-cart-full::after,
 .menu-item-cart-full:hover::after{
     background-image: url("../img/header-basket-red.svg");
@@ -249,9 +258,9 @@ a{
 
     padding: 0;
     padding-top: 11px;
-    padding-right: 20px;
+    padding-right: 23px;
     padding-bottom: 11px;
-    padding-left: 20px;
+    padding-left: 23px;
 
     font: inherit;
     font-size: 18px;
@@ -310,6 +319,8 @@ a{
 }
 .bredcrumbs{
     display: flex;
+    margin-bottom: 2px;
+    margin-top: -20px;
 
     padding: 0;
 
@@ -320,15 +331,25 @@ a{
 }
 .bredcrumbs a{
     text-decoration: underline;
-
+    position: relative;
     color: #ffffff;
+    padding-right: 20px;
+}
+.bredcrumbs a::before{
+    content: "»";
+    position: absolute;
+    right: 5px;
+    top: 0;
 }
 .bredcrumbs a:hover,
 .bredcrumbs a:active{
     color: #ffbc9e;
 }
 .page-title{
+    margin-top: 0;
     margin-bottom: 50px;
+    font-size: 35px;
+    line-height: 41px;
 }
 .form-filters{
     display: flex;
@@ -341,7 +362,8 @@ a{
 }
 .form-filters legend{
     position: absolute;
-    top: -20px;
+    top: -22px;
+    left: 15px;
 
     font-size: 14px;
     line-height: 16px;
@@ -368,7 +390,10 @@ a{
     margin: 0;
     margin-right: 16px;
     margin-bottom: 38px;
-    padding: 10px;
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px; 
+
 
     border: none;
     border-radius: 36px;
@@ -426,7 +451,7 @@ a{
 .slider{
     margin-bottom: 40px;
     position: relative;
-    padding-top: 270px;
+    padding-top: 277px;
 }
 .slider h3{
     width: 690px;
@@ -455,14 +480,15 @@ a{
 }
 .slider-list-item h3{
     margin: 0 auto;
-    margin-bottom: 35px;
+    margin-bottom: 31px;
 }
 .slider-list-item-strawberry,
 .slider-list-item-lemon{
     display: none;
 }
 .button-slider{
-    width: 278px;
+    padding-left: 42px;
+    padding-right: 42px;
     padding-top: 10px;
     padding-bottom: 10px;
 
@@ -475,7 +501,7 @@ a{
 .slider-toggle-list{
     position: absolute;
     display: flex;
-    top: 450px;
+    top: 445px;
     left: -40px;
     font-size: 0;
 
@@ -522,7 +548,7 @@ a{
     display: flex;
 
     margin: 0 auto;
-    margin-bottom: 35px;
+    margin-bottom: 37px;
 
     justify-content: center;
 }
@@ -544,6 +570,7 @@ a{
     min-height: 230px;
     padding: 20px;
     padding-top: 15px;
+    padding-bottom: 25px;
 
     list-style: none;
 
@@ -568,7 +595,7 @@ a{
 }
 .banners p{
     margin: 0;
-
+    padding-right: 5px;
     font-size: 18px;
     line-height: 22px;
 }
@@ -584,7 +611,7 @@ a{
     max-width: calc(1200px - 27px*2);
     margin: 0 auto;
     box-sizing: border-box;
-    width: calc(100vw - 4.5%);
+    width: calc(100vw - 5.5%);
 }
 .catalog-list{
     display: flex;
@@ -599,6 +626,8 @@ a{
     display: flex;
 
     padding: 0;
+    margin: 0;
+    margin-bottom: 28px;
 
     justify-content: space-between;
 }
@@ -607,7 +636,7 @@ a{
     flex-direction: column;
     position: relative;
 
-    width: 22.25%;
+    width: 23.25%;
     min-width: 200px;
     min-height: 300px;
 
@@ -628,6 +657,7 @@ a{
     background-color: rgba(255, 255, 255, 0.2);
 }
 .hits-item h3{
+    font-size: 16px;
     margin-top: 0px;
     margin-bottom: 15px;
 
@@ -648,7 +678,7 @@ a{
 .hits-item-price{
     z-index: 2;
 
-    margin-top: -60px;
+    margin-top: -57px;
     margin-bottom: 20px;
 }
 .hits-item img{
@@ -670,8 +700,10 @@ a{
 .features{
     box-sizing: border-box;
     margin-bottom: 40px;
-    padding: 20px;
-    padding-top: 30px;
+    padding-left: 20px;
+    padding-top: 23px;
+    padding-right: 30px;
+    padding-bottom: 23px;
 
     color: #323232;
     border-radius: 15px;
@@ -701,9 +733,9 @@ a{
     position: relative;
 
     box-sizing: border-box;
-    width: 48%;
-    margin-top: 30px;
-    padding-left: 50px;
+    width: 48.5%;
+    margin-top: 21px;
+    padding-left: 55px;
 }
 .features-item p{
     margin: 0;
@@ -713,7 +745,7 @@ a{
 .features-item::before{
     position: absolute;
     top: -14px;
-    left: -5px;
+    left: -2px;
 
     width: 49px;
     height: 49px;
@@ -750,7 +782,7 @@ a{
     flex-direction: column;
     align-items: flex-start;
 
-    
+    padding-top: 22px;
 
     border-radius: 15px;
     background-color: #ffffff;
@@ -759,7 +791,7 @@ a{
 }
 .blog-news p{
     margin: 0;
-
+    margin-bottom: 5px;
     color: #323232;
 
     order: -1;
@@ -792,7 +824,8 @@ a{
     box-sizing: border-box;
     height: 100%;
     padding: 20px;
-    padding-top: 32px;
+    padding-top: 30px;
+    padding-bottom: 32px;
 
     border-radius: 15px;
     background-color: #f8f7f4;
@@ -808,7 +841,8 @@ a{
     display: flex;
 
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+
 }
 .form-subscribe p{
     width: 100%;
@@ -816,11 +850,15 @@ a{
     margin-right: 10px;
 }
 .form-subscribe .button{
-    height: 46px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 19px;
+    padding-left: 19px;
 }
 .form-subscribe input{
     box-sizing: border-box;
     width: 100%;
+    height: 43px;
 }
 .subscribe input,
 .modal-feedback input,
@@ -870,14 +908,35 @@ a{
 }
 .feedback{
     z-index: 2;
-
-    padding: 20px;
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    min-height: 71%;
+    min-width: 302px;
 
     border-radius: 15px;
     background-color: #f8f7f4;
 }
 .feedback p{
     margin-top: 0;
+}
+.feedback-address{
+    margin-bottom: 17px;
+}
+.feedback-phone{
+    margin-bottom: 26px;
+}
+.feedback-phone b{
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+.feedback .button{ 
+    width: 82.5%;
+    padding-top: 9px;
+    padding-bottom: 9px;
 }
 .pagination-list{
     display: flex;
@@ -945,7 +1004,7 @@ a{
     list-style: none;
 }
 .footer-social li{
-    margin-right: 11px;
+    margin-right: 13px;
 }
 .button-social{
     display: inline-block;
@@ -971,6 +1030,7 @@ a{
     width: 320px;
     height: 50px;
     padding: 0;
+    padding-left: 7px;
 
     list-style: none;
 
@@ -978,6 +1038,7 @@ a{
 }
 .footer-link-list li{
     margin-right: 30px;
+    padding-bottom: 2px;
 }
 .footer-link-heart{
     margin-left: -15px;
@@ -1022,15 +1083,22 @@ a{
 
 .footer-copyright{
     font-size: 12px;
+    position: relative;
+    margin-top: 25px;
+}
+.footer-copyright-button::after{
+    content: "";
+    position: absolute;
+    top: -40px;
+    height: 40px;
+    width: 110px;
+    background-image: url(../img/logo-htmlacademy.svg);
+    background-repeat: no-repeat;
 }
 .footer-copyright p{
     margin: 0;
 }
-.footer-copyright-button{
-    display: inline-block;
-    width: 110px;
-    height: 40px;
-}
+
 .modal-feedback{
     display: none;
 
