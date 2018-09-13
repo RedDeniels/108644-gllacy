@@ -435,7 +435,7 @@ a{
     left: 35px;
 }
 .filters-item-price-toggle-max{
-    left: 135px;
+    left: 133px;
 }
 .richness-list{
     display: flex;
@@ -444,7 +444,38 @@ a{
     padding: 0;
 }
 .richness-list li{
-    margin-right: 50px;
+    position: relative;
+    padding-left: 31px;
+    margin-right: 20px;
+}
+.richness-list li:last-child{
+    margin-right: 5px;
+}
+.richness-list label::before{
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    background-repeat: no-repeat;
+    background-image: url("../img/radio-off.svg");
+    background-size: cover;
+    left: 0;
+    top: 0;
+}
+.richness-list label:hover::before{
+    background-image: url("../img/radio-off-hover.svg");
+}
+.richness-list-input:checked + label::before{
+    background-image: url("../img/radio-on.svg");
+}
+.richness-list-input:checked:hover + label::before{
+    background-image: url("../img/radio-on-hover.svg");
+}
+.richness-list-input:disabled + label::before{
+    background-image: url("../img/radio-off-blocked.svg");
+}
+.richness-list-input:checked:disabled + label::before{
+    background-image: url("../img/radio-on-blocked.svg");
 }
 .fillers-list{
     display: flex;
