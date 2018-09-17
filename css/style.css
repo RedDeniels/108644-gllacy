@@ -54,6 +54,7 @@ a{
     display: flex;
 }
 .main-logo{
+    display: block;
     margin-top: 9px;
 }
 .site-navigation{
@@ -320,7 +321,7 @@ a{
 .bredcrumbs{
     display: flex;
     margin-bottom: 2px;
-    margin-top: -20px;
+    margin-top: -15px;
 
     padding: 0;
 
@@ -353,7 +354,7 @@ a{
 }
 .form-filters{
     display: flex;
-
+    min-width: 870px;
     flex-wrap: wrap;
     align-items: flex-start;
 }
@@ -453,7 +454,7 @@ a{
 }
 .richness-list li{
     position: relative;
-    padding-left: 31px;
+    padding-left: 30px;
     margin-right: 20px;
 }
 .richness-list li:last-child{
@@ -585,7 +586,7 @@ a{
     list-style: none;
 }
 .slider-list-item{
-    display: block;
+    
     text-align: center;
 }
 .slider-list-item h3{
@@ -745,10 +746,12 @@ a{
     display: flex;
     flex-direction: column;
     position: relative;
-
-    width: 23.25%;
+    box-sizing: border-box;
+    width: 25%;
     min-width: 200px;
     min-height: 300px;
+    padding-left: 1.13%;
+    padding-right: 1.13%;
 
     list-style: none;
 
@@ -762,10 +765,7 @@ a{
     height: 61px;
     position: absolute;
     background-image: url("../img/hit.svg");
-    z-index: 10;
-}
-.hits-item:hover{
-    background-color: rgba(255, 255, 255, 0.2);
+    z-index: 4;
 }
 .hits-item h3{
     font-size: 16px;
@@ -803,10 +803,20 @@ a{
     order: -1;
 }
 .hits-item .button{
-    /*что-бы не мешало при составлении сетки*/
+
     display: none;
 
     order: 3;
+}
+.hits-item:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    margin-bottom: -46px;
+    z-index: 5;
+}
+.hits-item:hover .button{
+    display: inline-block;
+    z-index: 5;
 }
 .features{
     box-sizing: border-box;
@@ -899,6 +909,8 @@ a{
     background-color: #ffffff;
     background-image: url('../img/blog-sherbet.jpg');
     background-repeat: no-repeat;
+    background-position: center right; 
+    background-size: auto 100%;
 }
 .blog-news p{
     margin: 0;
@@ -1016,8 +1028,8 @@ a{
     z-index: 1;
     min-width: 900px;
     min-height: 430px;
+    height: 40vw;
     width: 100%;
-    height: auto;
 }
 .feedback{
     z-index: 2;
@@ -1058,9 +1070,12 @@ a{
 
     color: #ffffff;
 
-    justify-content: flex-end;
+    justify-content: space-between;
     margin-top: 45px;
     margin-bottom: 22px;
+    margin-left: 82.6%;
+    padding-left: 0;
+
 }
 .pagination-item a{
     box-sizing: border-box;
@@ -1071,6 +1086,12 @@ a{
     width: 28px;
     border-radius: 50%;
     text-align: center;
+}
+.pagination-item:first-child{
+    margin-right: 5px;
+}
+.pagination-item:last-child{
+    margin-left: 5px;
 }
 .pagination-item a:hover{
     background-color: rgba(255, 255, 255, 0.2);
