@@ -747,11 +747,9 @@ a{
     flex-direction: column;
     position: relative;
     box-sizing: border-box;
-    width: 25%;
+    width: 22.74%;
     min-width: 200px;
     min-height: 300px;
-    padding-left: 1.13%;
-    padding-right: 1.13%;
 
     list-style: none;
 
@@ -805,17 +803,35 @@ a{
 .hits-item .button{
 
     display: none;
-
+    width: 196px;
+    height: 44px;
+    padding-left: 0;
+    padding-right: 0;
     order: 3;
 }
 .hits-item:hover{
+    margin-bottom: -46px;
+}
+.hits-item:hover::before{
+    content: "";
+    position: absolute;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
-    margin-bottom: -46px;
-    z-index: 5;
+    height: 106.5%;
+    width: 109.73%;
+    top: -10px;
+    left: -10px;
+    z-index: 1;
 }
 .hits-item:hover .button{
+    content: "";
+    position: absolute;
     display: inline-block;
+    box-sizing: border-box;
+    bottom: 17px;
+    min-width: 193px;
+    width: 68.25%;
+
     z-index: 5;
 }
 .features{
