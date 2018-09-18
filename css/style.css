@@ -2,6 +2,8 @@ body{
     margin: 0;
     padding: 0;
 
+    min-width: 900px;
+
     font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -14,6 +16,20 @@ a{
 }
 .site-wrapper{
 	background-color: #849d8f;
+}
+
+/*Затемнение фона при открытии моадльного окна*/
+.site-wrapper::after{
+    display: none;
+    content: "";
+    background: black;
+    opacity: 0.302;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90;
 }
 .site-wrapper-index{
     z-index: -100;
@@ -57,6 +73,22 @@ a{
     display: block;
     margin-top: 9px;
 }
+.sub-menu{
+    position: absolute;
+    display: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f8f7f4;
+    border-radius: 6px;
+}
+.sub-menu input{
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    line-height: 24px;
+}
 .site-navigation{
     display: flex;
 
@@ -70,7 +102,7 @@ a{
 .site-navigation-sub{
     margin: 0;
     padding: 0;
-
+    z-index: 10;
     list-style: none;
 }
 .site-navigation-item > a{
@@ -114,6 +146,7 @@ a{
     
     background-color: #f8f7f4;
     left: -7px;
+    top: 41px;
 }
 .site-navigation-sub a{
     display: block;
@@ -126,7 +159,7 @@ a{
 
     color: #323232;
 }
-.site-navigation-item:hover>.site-navigation-sub{
+.site-navigation-item-catalog:hover .site-navigation-sub{
     display: block;
 }
 .site-navigation-sub a:hover{
@@ -172,18 +205,45 @@ a{
     background-image: url("../img/header-loupe-black.svg");
 }
 .form input,
-.form-search input{
-    padding: 15px;
-
+.form textarea{
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 15px;
+    padding-right: 15px;
     color: #999999;
+
     border: 1px solid #d3d3d2;
     border-radius: 6px;
     background-color: #ffffff;
 }
 .form input:hover,
-.form-search input:hover,
-.form-feedback textarea:hover{
+.form textarea:hover{
     border: 2px solid #9a9a9a;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+.form input:focus,
+.form textarea:focus{
+    outline: none;
+    border: 2px solid #8fbdec;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+.menu-search-sub{
+    right: 0px;
+    top: 57px;
+    min-width: 341px;
+    z-index: 10;
+}
+.menu-search:hover .menu-search-sub{
+    display: inline-block;
+}
+.menu-search-sub .button-search{
+    display: none;
 }
 .menu-cart,
 .menu-login{
@@ -213,6 +273,49 @@ a{
 }
 .menu-item-cart:hover::after{
     background-image: url("../img/header-basket-black.svg");
+}
+
+.menu-login-sub{
+    box-sizing: border-box;
+    top: 60px;
+    right: 0px;
+    min-width: 277px;
+    padding-left: 19px;
+    padding-right: 19px;
+    z-index: 10;
+}
+.menu-login-sub p{
+    margin: 0;
+}
+.menu-login-sub input{
+    margin-bottom: 20px;
+}
+.menu-login:hover .menu-login-sub{
+    display: block;
+    flex-wrap: wrap;
+}
+.form-login{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.form-login input{
+    min-width: 240px;
+}
+.login-link{
+    width: 125px;
+    order: 2;
+}
+.login-link a{
+    display: block;
+}
+.form-login .button-login{
+    order: 1;
+    min-width: 100px;
+    margin-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .menu-item{
     font-size: 14px;
@@ -778,7 +881,7 @@ a{
     flex-direction: column;
     position: relative;
     box-sizing: border-box;
-    width: 22.74%;
+    width: 23.29%;
     min-width: 200px;
     min-height: 300px;
 
@@ -1027,9 +1130,7 @@ a{
     padding-right: 19px;
     padding-left: 19px;
 }
-.subscribe input,
-.modal-feedback input,
-.modal-feedback textarea{
+.subscribe input{
     padding: 15px;
 
     font-size: 16px;
@@ -1077,7 +1178,7 @@ a{
     z-index: 1;
     min-width: 900px;
     min-height: 430px;
-    height: 40vw;
+    height: 41vw;
     width: 100%;
 }
 .feedback{
@@ -1086,7 +1187,7 @@ a{
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     min-height: 71%;
     min-width: 302px;
 
@@ -1263,8 +1364,8 @@ a{
     content: "";
     left: 5px;
     top: 5px;
-    width: 5px;
-    height: 8px;
+    width: 7px;
+    height: 12px;
     background: #fff;
     -moz-border-radius: 5px 5px 0 0;
     border-radius: 5px 5px 0 0;
@@ -1280,7 +1381,7 @@ a{
             transform-origin: 0 100%;
 }
 .footer-link-heart:after {
-    left: 0;
+    left: -1px;
     -webkit-transform: rotate(45deg);
        -moz-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
@@ -1310,14 +1411,76 @@ a{
 .footer-copyright p{
     margin: 0;
 }
-
+.modal{
+    position: fixed;
+    left: 50%;
+    top: 338px;
+   
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 27px;
+    padding-top: 18px;
+    border-radius: 9px;
+}
 .modal-feedback{
+    /*Включает модальное окно*/
     display: none;
-
+    width: 427px;
+    min-height: 397px;
+    margin-left: -233px;
     color: #323232;
     background-color: #f8f7f4;
+    z-index: 100;
 }
 .modal-feedback b{
+    display: block;
     font-size: 24px;
     line-height: 28px;
+    margin-bottom: 20px;
+}
+.modal-feedback input{
+    box-sizing: border-box;
+    width: 55.97%;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+.modal-feedback textarea{
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 155px;
+}
+.modal-feedback .button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 290px;
+}
+.modal-close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 18px;
+    height: 18px;
+    font-size: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+.modal-close::before,
+.modal-close::after {
+    content: "";
+    
+    position: absolute;
+    right: -1px;
+
+    width: 19px;
+    height: 1px;
+    background-color: #231f20;
+}
+.modal-close::before {
+    transform: rotate(45deg);
+}
+.modal-close::after {   
+    transform: rotate(-45deg);
 }
