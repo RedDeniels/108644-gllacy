@@ -821,7 +821,7 @@ a{
     width: 109.73%;
     top: -10px;
     left: -10px;
-    z-index: 1;
+    z-index: 3;
 }
 .hits-item:hover .button{
     content: "";
@@ -829,6 +829,8 @@ a{
     display: inline-block;
     box-sizing: border-box;
     bottom: 17px;
+    left: 50%;
+    margin-left: -100px;
     min-width: 193px;
     width: 68.25%;
 
