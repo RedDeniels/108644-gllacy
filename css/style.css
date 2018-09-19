@@ -69,6 +69,41 @@ a{
 .navigation-container{
     display: flex;
 }
+.button{
+    display: inline-block;
+
+    padding: 0;
+    padding-top: 11px;
+    padding-right: 23px;
+    padding-bottom: 11px;
+    padding-left: 23px;
+
+    font: inherit;
+    font-size: 18px;
+    line-height: 24px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    color: #ffffff;
+    border: none;
+    border-radius: 26px;
+    background-image:    -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image:     -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
+    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+    cursor: pointer;
+}
+.button:hover{
+    background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+.button:active{
+    background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+    box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
 .main-logo{
     display: block;
     margin-top: 9px;
@@ -147,6 +182,11 @@ a{
     background-color: #f8f7f4;
     left: -7px;
     top: 41px;
+    
+    border-radius: 5px;
+    background-color: rgb(248, 247, 244);
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+
 }
 .site-navigation-sub a{
     display: block;
@@ -238,6 +278,9 @@ a{
     top: 57px;
     min-width: 341px;
     z-index: 10;
+
+    background-color: rgb(248, 247, 244);
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 .menu-search:hover .menu-search-sub{
     display: inline-block;
@@ -283,6 +326,10 @@ a{
     padding-left: 19px;
     padding-right: 19px;
     z-index: 10;
+    
+    border-radius: 6px;
+    background-color: rgb(248, 247, 244);
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 .menu-login-sub p{
     margin: 0;
@@ -343,24 +390,100 @@ a{
 .menu-cart{
     position: relative;
 }
-.menu-cart-sub{
+.menu-cart:hover .menu-cart-sub{
     display: flex;
-    /*иначе мешает*/
+}
+.menu-cart-sub{
     display: none;
+    box-sizing: border-box;
+
     flex-direction: column;
 
     position: absolute;
-    top: 65px;
+    top: 60px;
     right: 0px;
 
     min-width: 540px;
-    padding: 20px;
+    padding: 15px;
+    padding-bottom: 20px;
 
     color: #323232;
-    border-radius: 15px;
+    border-radius: 7px;
     background-color: #f8f7f4;
 
     align-items: flex-end;
+
+    z-index: 20;
+
+    border-radius: 5px;
+    background-color: rgb(248, 247, 244);
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+.menu-cart-sub .button{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.cart-table{
+    margin-bottom: 13px;
+    align-self: flex-start;
+    position: relative;
+    font-size: 13px;
+    line-height: 16px;
+
+    color: #323232;
+}
+.cart-table::before{
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    width: 102.5%;
+    height: 1px;
+    background-color: #cacac7;
+    bottom: 0px;
+}
+.cart-table td{
+    padding-top: 10px;
+}
+.cart-table-item{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 17px;
+}
+.cart-table-item-del{
+    position: relative;
+    padding: 0;
+    margin-right: 15px;
+    width: 11px;
+    height: 11px;
+}
+.cart-table-item-del .modal-close{
+    top: 11px;
+    left: -2px;
+    padding: 0;
+    width: 11px;
+    height: 11px;
+}
+.cart-table-item-del .modal-close::after,
+.cart-table-item-del .modal-close::before{
+    width: 13px;
+}
+.cart-table-item .cart-table-item-image{
+    padding: 0;
+    margin-right: 11px;
+    background-size: 33px 33px;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+}
+.cart-table-item-orange .cart-table-item-image{
+    background-image: url("../img/icecream-orange.jpg");
+}
+.cart-table-item-white .cart-table-item-image{
+    background-image: url("../img/icecream-white.jpg");a
+}
+.cart-table-item-text{
+    width: 220px;
+    margin-right: 25px;
 }
 .cart-table-item-text a{
     color: #323232;
@@ -373,55 +496,12 @@ a{
     font-size: 15px;
     line-height: 18px;
 }
-.cart-table{
-    margin-bottom: 30px;
-
-    font-size: 13px;
-    line-height: 16px;
-
-    color: #323232;
-}
 .cart-totals{
-    margin-bottom: 10px;
+    margin-bottom: 13px;
 }
 .cart-table-item-unit{
+    margin-right: 25px;
     color: #999999;
-}
-
-.button{
-    display: inline-block;
-
-    padding: 0;
-    padding-top: 11px;
-    padding-right: 23px;
-    padding-bottom: 11px;
-    padding-left: 23px;
-
-    font: inherit;
-    font-size: 18px;
-    line-height: 24px;
-
-    text-align: center;
-    vertical-align: middle;
-
-    color: #ffffff;
-    border: none;
-    border-radius: 26px;
-    background-image:    -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-    background-image:     -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-    box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
-    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-
-    cursor: pointer;
-}
-.button:hover{
-    background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
-    box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
-}
-.button:active{
-    background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
-    box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 .login-link a{
     font-size: 13px;
@@ -694,7 +774,7 @@ a{
     text-shadow: none;
 }
 .slider{
-    margin-bottom: 40px;
+    margin-bottom: 42px;
     position: relative;
     padding-top: 277px;
 }
@@ -1362,8 +1442,8 @@ a{
 .footer-link-heart:after {
     position: absolute;
     content: "";
-    left: 5px;
-    top: 5px;
+    left: 4px;
+    top: 4px;
     width: 7px;
     height: 12px;
     background: #fff;
@@ -1381,7 +1461,7 @@ a{
             transform-origin: 0 100%;
 }
 .footer-link-heart:after {
-    left: -1px;
+    left: -3px;
     -webkit-transform: rotate(45deg);
        -moz-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
