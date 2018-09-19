@@ -193,7 +193,6 @@ a{
     padding-left: 20px;
     padding-top: 8px;
     padding-bottom: 8px;
-    overflow: hidden;
     font-size: 14px;
     line-height: 16px;
 
@@ -207,6 +206,14 @@ a{
 }
 .site-navigation-sub a:active{
     background-color: #f6b5a5;
+}
+.site-navigation-sub a:hover::last-child{
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.site-navigation-sub a::last-child:hover{
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 .catalog-sub-news{
     position: relative;
@@ -614,8 +621,37 @@ a{
     border-radius: 36px;
     background-color: rgba(255, 255, 255, 0.2);
 }
+.filters-item-sort{
+    position: relative;
+}
+.filters-item-sort::before{
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: 5.5px solid #ffffff;
+    
+    border-bottom-width: 0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-width: 10px;
+}
+.filters-item-sort:hover::before{
+    border: 5.5px solid #323232;
+    
+    border-bottom-width: 0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-width: 10px;
+}
+.filters-item-sort:active::before{
+    border: none;
+}
 .filters-item-sort:focus-within{
     background-color: #ffffff;
+}
+.filters-item-sort:focus-within::before{
+    border: none;
 }
 .filters-item-price{
     /*временно*/
@@ -892,7 +928,7 @@ a{
 
     box-sizing: border-box;
     width: 48.85%;
-    min-height: 230px;
+    min-height: 229px;
     padding: 20px;
     padding-top: 15px;
     padding-bottom: 25px;
@@ -1034,7 +1070,7 @@ a{
     height: 106.5%;
     width: 109.73%;
     top: -10px;
-    left: -10px;
+    left: -12px;
     z-index: 3;
 }
 .hits-item:hover .button{
