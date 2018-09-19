@@ -201,20 +201,22 @@ a{
 .site-navigation-item-catalog:hover .site-navigation-sub{
     display: block;
 }
-.site-navigation-sub a:hover{
+.site-navigation-sub li:hover{
     background-color: #fbded7;
 }
-.site-navigation-sub a:active{
+.site-navigation-sub li:active{
     background-color: #f6b5a5;
 }
-.site-navigation-sub a:hover::last-child{
+.site-navigation-sub li:last-child:hover{
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
 }
-.site-navigation-sub a::last-child:hover{
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+
+.site-navigation-sub li:first-child:hover{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
+
 .catalog-sub-news{
     position: relative;
 }
@@ -486,7 +488,7 @@ a{
     background-image: url("../img/icecream-orange.jpg");
 }
 .cart-table-item-white .cart-table-item-image{
-    background-image: url("../img/icecream-white.jpg");a
+    background-image: url("../img/icecream-white.jpg");
 }
 .cart-table-item-text{
     width: 220px;
