@@ -1391,10 +1391,11 @@ a{
     padding-top: 2px;
     color: #ffffff;
     display: inline-block;
-    height: 28px;
-    width: 28px;
+    height: 25px;
+    width: 25px;
     border-radius: 50%;
     text-align: center;
+    margin-right: 4px;
 }
 .pagination-item:first-child{
     margin-right: 5px;
