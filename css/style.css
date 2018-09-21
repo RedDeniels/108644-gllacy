@@ -541,6 +541,8 @@ a{
     line-height: 24px;
 
     color: #ffffff;
+    margin-top: 5px;
+    display: block;
 }
 .title-container{
     display: flex;
@@ -870,7 +872,7 @@ a{
 }
 .slider-list-item h3{
     margin: 0 auto;
-    margin-bottom: 31px;
+    margin-bottom: 27px;
 }
 .slider-list .slider-list-item{
     display: none;
