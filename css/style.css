@@ -1082,7 +1082,7 @@ a{
     order: -1;
 }
 .hits-item .button{
-
+    font-weight: bold;
     display: none;
     width: 196px;
     height: 44px;
