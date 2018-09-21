@@ -14,6 +14,9 @@ body{
 a{
     text-decoration: none;
 }
+select::-ms-expand {
+    display: none;
+}
 .site-wrapper{
 	background-color: #849d8f;
 }
@@ -332,6 +335,7 @@ a{
     top: 60px;
     right: 0px;
     min-width: 277px;
+    max-width: 280px;
     padding-left: 19px;
     padding-right: 19px;
     z-index: 10;
@@ -485,6 +489,7 @@ a{
     padding: 0;
     margin-right: 11px;
     background-size: 33px 33px;
+    background-repeat: no-repeat;
     width: 33px;
     height: 33px;
     border-radius: 50%;
@@ -985,6 +990,7 @@ a{
     background-repeat: no-repeat;
 }
 .banners p{
+    width: 100%;
     margin: 0;
     padding-right: 5px;
     font-size: 18px;
@@ -1012,6 +1018,8 @@ a{
 
     flex-wrap: wrap;
     justify-content: space-between;
+
+    width: 100%;
 }
 .hits-list{
     display: flex;
@@ -1044,6 +1052,8 @@ a{
     position: absolute;
     background-image: url("../img/hit.svg");
     z-index: 4;
+    top: 0;
+    left: 0;
 }
 .hits-item h3{
     font-size: 16px;
@@ -1328,7 +1338,8 @@ a{
     min-height: 430px;
 
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-start;
+
 }
 .map{
     position: absolute;
@@ -1354,6 +1365,8 @@ a{
 
     border-radius: 15px;
     background-color: #f8f7f4;
+
+    margin-top: 62px;
 }
 .feedback p{
     margin-top: 0;
@@ -1368,6 +1381,7 @@ a{
     display: inline-block;
     padding-top: 5px;
     padding-bottom: 3px;
+    color: #323232;
 }
 .feedback .button{ 
     font-weight: bold;
@@ -1458,6 +1472,7 @@ a{
     height: 1px;
     background-color: #a9bbb1;
     top: 0px;
+    left: 0px;
 }
 .main-footer a{
     text-decoration: underline;
