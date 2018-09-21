@@ -679,12 +679,6 @@ a{
        -moz-appearance: none;
             appearance: none;
 }
-
-.filters-item-price{
-    /*временно*/
-    width: 195px;
-    height: 22px;
-}
 .filters-item-price-scale{
     position: relative;
 }
@@ -703,6 +697,10 @@ a{
     margin-left: 23px;
     
 }
+.filters-item-price{
+    width: 195px;
+    height: 22px;
+}
 .filters-item-price-toggle{
     position: absolute;
     border: 8px solid #f8f7f4;
@@ -711,6 +709,7 @@ a{
     height: 4px;
     width: 4px;
     top: 9px;
+    cursor: pointer;
 }
 .filters-item-price-toggle:hover{
     top: 8px;
@@ -797,15 +796,18 @@ a{
 }
 .fillers-list-input:checked + label::before{
     background-image: url("../img/checkbox-on.svg");
+    width: 22px;
 }
 .fillers-list-input:checked:hover + label::before{
     background-image: url("../img/checkbox-on-hover.svg");
+    width: 22px;
 }
 .fillers-list-input:disabled + label::before{
     background-image: url("../img/checkbox-off-blocked.svg");
 }
 .fillers-list-input:checked:disabled + label::before{
     background-image: url("../img/checkbox-on-blocked.svg");
+    width: 22px;
 }
 .button-filters{
     line-height: 18px;
@@ -1014,7 +1016,7 @@ a{
 
     padding: 0;
     margin: 0;
-    margin-bottom: 5px;
+
 
     justify-content: space-between;
 }
@@ -1045,6 +1047,7 @@ a{
     font-size: 16px;
     margin-top: 0px;
     margin-bottom: 15px;
+    margin-right: 10px;
 
     text-align: center;
     text-decoration: underline;
@@ -1116,8 +1119,8 @@ a{
     box-sizing: border-box;
     margin-bottom: 40px;
     padding-left: 20px;
-    padding-top: 23px;
-    padding-right: 30px;
+    padding-top: 28px;
+    padding-right: 20px;
     padding-bottom: 23px;
 
     color: #323232;
@@ -1152,11 +1155,15 @@ a{
     margin-top: 21px;
     padding-left: 55px;
 }
+.features-item:nth-child(2n){
+    padding-left: 60px;
+}
 .features-item p{
     margin: 0;
 
     font-size: 16px;
 }
+
 .features-item::before{
     position: absolute;
     top: -14px;
