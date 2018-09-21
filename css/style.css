@@ -17,20 +17,7 @@ a{
 .site-wrapper{
 	background-color: #849d8f;
 }
-
 /*Затемнение фона при открытии моадльного окна*/
-.site-wrapper::after{
-    display: none;
-    content: "";
-    background: black;
-    opacity: 0.302;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 90;
-}
 .site-wrapper-index{
     z-index: -100;
     transition: background-image 0.5s ease, background-color 0.5s ease;
@@ -38,6 +25,18 @@ a{
     background-image: url('../img/slider-raspberry.png');
     background-repeat: no-repeat;
     background-position: top center;
+}
+.site-wrapper-dark::after{
+    display: block;
+    content: "";
+    background: black;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90;
 }
 .visual-hidden{
     clip: rect(0 0 0 0);
@@ -871,8 +870,7 @@ a{
     margin: 0 auto;
     margin-bottom: 31px;
 }
-.slider-list-item-strawberry,
-.slider-list-item-lemon{
+.slider-list .slider-list-item{
     display: none;
 }
 .button-slider{
@@ -909,16 +907,6 @@ a{
     border-radius: 50%;
     cursor: pointer;
 }
-#product-1:checked ~ #slide-1,
-#product-2:checked ~ #slide-2,
-#product-3:checked ~ #slide-3{
-    display: block;
-}
-#product-1:checked ~ label[for="product-1"],
-#product-2:checked ~ label[for="product-2"],
-#product-3:checked ~ label[for="product-3"] {
-    background-color: #ffffff;
-}
 #product-1:checked ~ .site-wrapper-index {
     background-color: #849d8f;
     background-image: url("../img/slider-raspberry.png");
@@ -932,6 +920,16 @@ a{
 #product-3:checked ~ .site-wrapper-index {
     background-color: #9d8b84;
     background-image: url("../img/slider-strawberry.png");
+}
+#product-1:checked ~ .site-wrapper #slide-1,
+#product-2:checked ~ .site-wrapper #slide-2,
+#product-3:checked ~ .site-wrapper #slide-3{
+    display: block;
+}
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"],
+#product-3:checked ~ .site-wrapper label[for="product-3"] {
+    background-color: #ffffff;
 }
 .banners{
     display: flex;
@@ -1300,12 +1298,16 @@ a{
 .contacts{
     overflow: hidden;
 
-    position: relative;
-
     font-size: 14px;
     line-height: 20px;
-
+    position: relative;
     color: #323232;
+}
+.contacts iframe{
+    position: absolute;
+    z-index: 2;
+    border: none;
+    width: 100%;
 }
 .contacts b{
     font-size: 18px;
@@ -1315,18 +1317,21 @@ a{
     display: flex;
 
     min-height: 430px;
-    /*высоту через вьюпорт*/
 
     justify-content: flex-end;
     align-items: center;
 }
 .map{
     position: absolute;
+    top: 0;
+    left: 0;
     z-index: 1;
     min-width: 900px;
     min-height: 430px;
     height: 41vw;
     width: 100%;
+
+    margin: 0;
 }
 .feedback{
     z-index: 2;
@@ -1561,6 +1566,46 @@ a{
 .footer-copyright p{
     margin: 0;
 }
+
+@keyframes bounce {
+  0% {
+    transform: translate(0, -2000px);
+  }
+
+  70% {
+    transform: translate(0, -40%);
+  }
+
+  90% {
+    transform: translate(0, -55%);
+  }
+
+  100% {
+    transform: translate(0, -50%);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(0, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-10px, -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(10px, -50%);
+  }
+}
+
 .modal{
     position: fixed;
     left: 50%;
@@ -1634,4 +1679,12 @@ a{
 }
 .modal-close::after {   
     transform: rotate(-45deg);
+}
+.modal-show{
+    display: block;
+
+    animation: bounce 0.6s;
+}
+.modal-error {
+    animation: shake 0.6s;
 }

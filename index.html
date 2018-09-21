@@ -8,9 +8,9 @@
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
-		<input class="visual-hidden" id="product-1" type="radio" name="toggle-raspberry" checked>
-		<input class="visual-hidden" id="product-2" type="radio" name="toggle-lemon">
-		<input class="visual-hidden" id="product-3" type="radio" name="toggle-strawberry">
+		<input class="visual-hidden" id="product-1" type="radio" name="toggle" checked>
+		<input class="visual-hidden" id="product-2" type="radio" name="toggle">
+		<input class="visual-hidden" id="product-3" type="radio" name="toggle">
 		<div class="site-wrapper site-wrapper-index">
 			<header class="main-header container">
 				<nav class="main-navigation">
@@ -88,15 +88,15 @@
 							</li>
 						</ul>
 						<ul class="slider-list">
-							<li class="slider-list-item slider-list-item-raspberry" id="slide-1">
+							<li class="slider-list-item-raspberry slider-list-item" id="slide-1">
 								<h3>Крем-брюле и пломбир с малиновым джемом</h3>
 								<a class="button button-slider" href="#">Давайте оба!</a>
 							</li>
-							<li class="slider-list-item slider-list-item-lemon" id="slide-2">
+							<li class="slider-list-item-lemon slider-list-item" id="slide-2">
 								<h3>Шоколадный пломбир и лимонный сорбет</h3>
 								<a class="button button-slider" href="#">Давайте оба!</a>
 							</li>
-							<li class="slider-list-item slider-list-item-strawberry" id="slide-3">
+							<li class="slider-list-item-strawberry slider-list-item" id="slide-3">
 								<h3>Пломбир с помадкой и клубничный щербет</h3>
 								<a class="button button-slider" href="#">Давайте оба!</a>
 							</li>
@@ -198,6 +198,7 @@
 				</div>
 				<section class="contacts">
 					<h2 class="visual-hidden">Как добраться</h2>
+					<iframe src="https://yandex.ru/map-widget/v1/-/CBBNIFrGLB" width="1200" height="428" frameborder="1" allowfullscreen="true"></iframe>
 					<img class="map" src="img/map.jpg" width="1200" height="428" alt="Ул. Большая Конюшенная 19/8 Санкт Питербург">
 					<div class="container contacts-container">	
 						<div class="feedback">
@@ -265,8 +266,6 @@
 				<button class="modal-close" type="button">Закрыть</button>
 			</section>
 		</div>
-
-		
-
+		<script src="js/script.js"></script>
 	</body>
 </html>
