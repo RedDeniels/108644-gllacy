@@ -19,6 +19,10 @@ select::-ms-expand {
 }
 .site-wrapper{
 	background-color: #849d8f;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
 }
 /*Затемнение фона при открытии моадльного окна*/
 .site-wrapper-index{
@@ -467,23 +471,25 @@ select::-ms-expand {
     justify-content: flex-start;
     margin-bottom: 17px;
 }
-.cart-table-item-del{
-    position: relative;
+.cart-table .cart-table-item-del{
+
     padding: 0;
     margin-right: 15px;
+    padding-top: 4px;
     width: 11px;
     height: 11px;
 }
-.cart-table-item-del .modal-close{
-    top: 11px;
-    left: -2px;
+.cart-table-item-del .table-close{
     padding: 0;
+    margin-left: 1px;
     width: 11px;
     height: 11px;
-}
-.cart-table-item-del .modal-close::after,
-.cart-table-item-del .modal-close::before{
-    width: 13px;
+    font-size: 0;
+    background-image: url("../img/table-close.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
 }
 .cart-table-item .cart-table-item-image{
     padding: 0;
@@ -556,7 +562,7 @@ select::-ms-expand {
 .bredcrumbs{
     display: flex;
     margin-bottom: 2px;
-    margin-top: -15px;
+    margin-top: -20px;
 
     padding: 0;
 
