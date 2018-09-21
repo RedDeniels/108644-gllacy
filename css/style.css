@@ -474,8 +474,9 @@ select::-ms-expand {
 .cart-table .cart-table-item-del{
 
     padding: 0;
-    margin-right: 15px;
+    padding-right: 15px;
     padding-top: 4px;
+    padding-bottom: 10px;
     width: 11px;
     height: 11px;
 }
@@ -493,22 +494,19 @@ select::-ms-expand {
 }
 .cart-table-item .cart-table-item-image{
     padding: 0;
-    margin-right: 11px;
+    padding-right: 11px;
     background-size: 33px 33px;
     background-repeat: no-repeat;
     width: 33px;
     height: 33px;
+    
+}
+.cart-table-item-image img{
     border-radius: 50%;
-}
-.cart-table-item-orange .cart-table-item-image{
-    background-image: url("../img/icecream-orange.jpg");
-}
-.cart-table-item-white .cart-table-item-image{
-    background-image: url("../img/icecream-white.jpg");
 }
 .cart-table-item-text{
     width: 220px;
-    margin-right: 25px;
+    padding-right: 25px;
 }
 .cart-table-item-text a{
     color: #323232;
@@ -525,7 +523,7 @@ select::-ms-expand {
     margin-bottom: 13px;
 }
 .cart-table-item-unit{
-    margin-right: 25px;
+    padding-right: 25px;
     color: #999999;
 }
 .login-link a{

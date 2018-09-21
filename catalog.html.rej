@@ -1,0 +1,10 @@
+diff a/catalog.html b/catalog.html	(rejected hunks)
+@@ -64,7 +64,7 @@
+ 							<div class="sub-menu menu-cart-sub">
+ 								<table class="cart-table">
+ 									<tr class="cart-table-item cart-table-item-orange">
+-										<td class="cart-table-item-del"><button class="modal-close">Убрать из корзины</button></td>
++										<td class="cart-table-item-del"><button class="table-close">Убрать из корзины</button></td>
+ 										<td class="cart-table-item-image"></td>
+ 										<td class="cart-table-item-text"><a href="#">Пломбир с апельсиновым джемом</a></td>
+ 										<td class="cart-table-item-weight"><span>1,5</span> кг x</td>
