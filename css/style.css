@@ -81,6 +81,7 @@ a{
     font: inherit;
     font-size: 18px;
     line-height: 24px;
+    font-weight: normal;
 
     text-align: center;
     vertical-align: middle;
@@ -432,6 +433,11 @@ a{
     padding-left: 15px;
     padding-right: 15px;
 }
+.menu-cart-sub .button:hover,
+.menu-cart-sub .button:active{
+    color: #ffffff;
+}
+
 .cart-table{
     margin-bottom: 13px;
     align-self: flex-start;
@@ -625,6 +631,8 @@ a{
 }
 .filters-item-sort{
     position: relative;
+    padding-right: 34px;
+    padding-left: 13px;
 }
 .filters-item-sort::before{
     content: "";
@@ -647,14 +655,32 @@ a{
     border-top-width: 10px;
 }
 .filters-item-sort:active::before{
-    border: none;
+    top: 18px;
+    border: 4.5px solid #323232;
+    
+    border-bottom-width: 0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-width: 5px;
 }
 .filters-item-sort:focus-within{
     background-color: #ffffff;
 }
 .filters-item-sort:focus-within::before{
-    border: none;
+    top: 18px;
+    border: 4.5px solid #323232;
+    
+    border-bottom-width: 0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-width: 5px;
 }
+.filters-item-sort select{
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
 .filters-item-price{
     /*временно*/
     width: 195px;
@@ -1265,6 +1291,9 @@ a{
     padding: 9px;
     padding-left: 12px;
 }
+.form-subscribe input:hover{
+    padding-left: 11px;
+}
 .modal-feedback textarea{
     resize: none;
 }
@@ -1436,14 +1465,17 @@ a{
 }
 .footer-social li{
     margin-right: 13px;
+    opacity: 0.8;
 }
 .button-social{
     display: inline-block;
     width: 32px;
     height: 32px;
 
-    border: 2px solid #c2cec7;
+    border-width: 2px;
+    border-style: solid;
     border-radius: 50%;
+    border-color: rgba(255, 255, 255, 0.5);
 }
 .button-social:hover path{
     fill: #ffffff;
@@ -1532,7 +1564,8 @@ a{
 .modal{
     position: fixed;
     left: 50%;
-    top: 338px;
+    top: 50%;
+    transform: translate(0, -50%);
    
     padding-right: 25px;
     padding-left: 25px;
