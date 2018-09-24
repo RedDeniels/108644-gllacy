@@ -824,7 +824,8 @@ select::-ms-expand{
     border-radius: 50%;
     background-color: #ababab;
 }
-.filters-item-price-toggle:hover{
+.filters-item-price-toggle:hover,
+.filters-item-price-toggle:active{
     top: 8px;
 
     width: 5px;
@@ -869,13 +870,15 @@ select::-ms-expand{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.richness-list label:hover::before{
+.richness-list label:hover::before,
+.richness-list label:focus::before{
     background-image: url('../img/radio-off-hover.svg');
 }
 .richness-list-input:checked + label::before{
     background-image: url('../img/radio-on.svg');
 }
-.richness-list-input:checked:hover + label::before{
+.richness-list-input:checked:hover + label::before,
+.richness-list-input:checked:focus + label::before{
     background-image: url('../img/radio-on-hover.svg');
 }
 .richness-list-input:disabled + label::before{
@@ -921,7 +924,8 @@ select::-ms-expand{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.fillers-list label:hover::before{
+.fillers-list label:hover::before,
+.fillers-list label:focus::before{
     background-image: url('../img/checkbox-off-hover.svg');
 }
 .fillers-list-input:checked + label::before{
@@ -929,7 +933,8 @@ select::-ms-expand{
 
     background-image: url('../img/checkbox-on.svg');
 }
-.fillers-list-input:checked:hover + label::before{
+.fillers-list-input:checked:hover + label::before,
+.fillers-list-input:checked:focus + label::before{
     width: 22px;
 
     background-image: url('../img/checkbox-on-hover.svg');
