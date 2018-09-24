@@ -1147,13 +1147,13 @@ select::-ms-expand{
     font-size: 35px;
     line-height: 41px;
 }
-/*.container{
+.container{
     min-width: calc(900px - 20px*2);
     max-width: calc(1200px - 27px*2);
     margin: 0 auto;
     box-sizing: border-box;
     width: calc(100vw - 5.5%);
-}*/
+}
 .catalog-list{
     display: -webkit-box;
     display: -ms-flexbox;
