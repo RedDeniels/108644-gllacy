@@ -920,7 +920,7 @@ select::-ms-expand{
     background-size: cover;
 }
 .fillers-list label:hover::before,
-.fillers-list label:focus::before{
+.fillers-list-input:focus + label::before{
     background-image: url('../img/checkbox-off-hover.svg');
 }
 .fillers-list-input:checked + label::before{
@@ -1609,7 +1609,7 @@ select::-ms-expand{
 
     color: #fff;
 
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 .pagination-item a{
     display: inline-block;
